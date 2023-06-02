@@ -1,3 +1,7 @@
+/*
+ * memcpy function
+ */ 
+
 void *memcpy(void *dst, const void *src, size_t n) {
     __CPROVER_precondition(
         __CPROVER_POINTER_OBJECT(dst) != __CPROVER_POINTER_OBJECT(src) ||
