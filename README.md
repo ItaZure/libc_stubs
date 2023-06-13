@@ -7,15 +7,11 @@
 3. 用`__CPROVER_precondition(bool, const char*)`对前置条件进行声明和描述
 
 ## 已完成harness
-|header| function name| Status | Occurs in CWE|
-|---|---|---|---|
-|string|memcpy| DONE | CWE_134| 
 
 <table>
     <tr>
         <th>header</th><th>function name</th><th>status</th><th>Occurance in CWE</th>
     </tr>
-
     <!-- string.h -->
     <tr>
         <td rowspan="2"> string </td><td> memcpy</td><td>✅</td><td> CWE_134 </td>
