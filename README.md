@@ -11,6 +11,20 @@
 |---|---|---|---|
 |string|memcpy| DONE | CWE_134| 
 
+<table>
+    <tr>
+        <th>header</th><th>function name</th><th>status</th><th>Occurance in CWE</th>
+    </tr>
+
+    <!-- string.h -->
+    <tr>
+        <td rowspan="2"> string </td><td> memcpy</td><td>✅</td><td> CWE_134 </td>
+    </tr>
+    <tr>
+        <td> strncpy </td><td>✅</td><td>CWE_415</td>
+    </tr>
+
+</table>
 
 
 ## 相关链接
