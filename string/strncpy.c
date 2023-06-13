@@ -1,4 +1,5 @@
 #include <stddef.h>
+#include <stdint.h>
 
 char *strncpy(char *dst, const char *src, size_t n){
     // strncpy src/dst overlap 
@@ -13,7 +14,7 @@ char *strncpy(char *dst, const char *src, size_t n){
     if (n > 0) {
         size_t index;
         __CPROVER_assume(index < n);
-        dst[index] = nondet_char();
+        ((uint8_t *)dst)[index] = nondet_uint8_t();
     }
     return dst;
 }
